@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="87096" started-at="2018-07-31T12:38:49Z" finished-at="2018-07-31T12:40:16Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="87096" started-at="2018-07-31T12:38:49Z" finished-at="2018-07-31T12:40:16Z">
+      <class name="com.sysco.auto_test.tests.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sysco.auto_test.tests.LoginTest@4667ae56]" name="beforeTest" is-config="true" duration-ms="13" started-at="2018-07-31T12:38:49Z" finished-at="2018-07-31T12:38:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.sysco.auto_test.tests.LoginTest@4667ae56]" name="init" is-config="true" duration-ms="0" started-at="2018-07-31T12:38:49Z" finished-at="2018-07-31T12:38:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.sysco.auto_test.tests.LoginTest@4667ae56]" name="testLogin" duration-ms="85541" started-at="2018-07-31T12:38:49Z" finished-at="2018-07-31T12:40:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestContext)[pri:0, instance:com.sysco.auto_test.tests.LoginTest@4667ae56]" name="cleanUp" is-config="true" duration-ms="12" started-at="2018-07-31T12:40:14Z" finished-at="2018-07-31T12:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13b3d178]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="webDriverClose()[pri:0, instance:com.sysco.auto_test.tests.LoginTest@4667ae56]" name="webDriverClose" is-config="true" duration-ms="1507" started-at="2018-07-31T12:40:14Z" finished-at="2018-07-31T12:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webDriverClose -->
+      </class> <!-- com.sysco.auto_test.tests.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
