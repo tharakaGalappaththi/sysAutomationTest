@@ -6,7 +6,4 @@ public class LoginData {
     public static final String userPassword = "12345678";
     public static final String firstName = "william";
     public static final String lastName = "jacob";
-
-
-
 }

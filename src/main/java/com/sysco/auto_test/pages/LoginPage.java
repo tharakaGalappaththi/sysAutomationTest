@@ -18,7 +18,6 @@ public class LoginPage {
     private By btnLogin = By.xpath("//button[@id='send2']");
 
 
-
     public static void loadLoginPage(Capabilities capabilities, String url) {
         syscoLabUI = new SyscoLabWUI(capabilities);
         syscoLabUI.navigateTo(url);
@@ -26,14 +25,15 @@ public class LoginPage {
         syscoLabUI.sleep(2);
     }
 
-    public void clickMyAccountLnk(){
+    public void clickMyAccountLnk() {
         syscoLabUI.sleep(1);
         syscoLabUI.click(lnkMyAccount);
         syscoLabUI.sleep(2);
     }
 
-    public  boolean isLoginButtonPresent(){
-     return syscoLabUI.isDisplayed(btnLogin);
+    public boolean isLoginButtonPresent() {
+        syscoLabUI.sleep(2);
+        return syscoLabUI.isDisplayed(btnLogin);
     }
 
     public void setTxtEmail(String userName) {
@@ -44,7 +44,7 @@ public class LoginPage {
         syscoLabUI.sendKeys(txtPsw, psw);
     }
 
-    public void clickLogin(){
+    public void clickLogin() {
         syscoLabUI.click(btnLogin);
         syscoLabUI.sleep(2);
     }
@@ -54,8 +54,5 @@ public class LoginPage {
             syscoLabUI.quit();
         }
     }
-
-
-
 
 }

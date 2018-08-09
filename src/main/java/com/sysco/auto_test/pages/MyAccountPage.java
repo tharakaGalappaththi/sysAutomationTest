@@ -6,8 +6,8 @@ public class MyAccountPage extends LoginPage {
 
     private By lblAccUserName = By.xpath("//p[contains(text(),'william jacob')]");
 
-    public boolean verifyMyAccountNameDisplayed(){
-        return   syscoLabUI.isDisplayed(lblAccUserName);
+    public boolean verifyMyAccountNameDisplayed() {
+        return syscoLabUI.isDisplayed(lblAccUserName);
     }
 
 }

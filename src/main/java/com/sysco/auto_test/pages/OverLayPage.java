@@ -9,8 +9,6 @@ import java.awt.*;
 
 public class OverLayPage extends LoginPage {
 
-//    protected static SyscoLabUI syscoLabUI;
-
     // WebElements in the Age verification overLay
     private By ddYear = By.xpath("//select[@id='age_select_year']");
     private By ddMonth = By.xpath("//select[@id='age_select_month']");
@@ -24,8 +22,8 @@ public class OverLayPage extends LoginPage {
     private By btnCheckOut = By.xpath("//ol[@id='mini-cart']/../div//button");
 
 
-    public boolean isAgeVerificationPopUpDisplayed(){
-      return   syscoLabUI.isDisplayed(btnEnter);
+    public boolean isAgeVerificationPopUpDisplayed() {
+        return syscoLabUI.isDisplayed(btnEnter);
     }
 
     public void selectBirthYear(String year) {
@@ -52,19 +50,19 @@ public class OverLayPage extends LoginPage {
 
     }
 
-    public boolean isTopItemExists(){
-      return   syscoLabUI.isDisplayed(lnkRemoveTop);
+    public boolean isTopItemExists() {
+        return syscoLabUI.isDisplayed(lnkRemoveTop);
     }
 
-    public String getProductName(){
+    public String getProductName() {
         return syscoLabUI.getText(lblRumUp);
     }
 
-    public String getProductPrice(){
+    public String getProductPrice() {
         return syscoLabUI.getText(lblItemPrice);
     }
 
-    public void clickOnCheckoutBtn(){
+    public void clickOnCheckoutBtn() {
         syscoLabUI.click(btnCheckOut);
     }
 }

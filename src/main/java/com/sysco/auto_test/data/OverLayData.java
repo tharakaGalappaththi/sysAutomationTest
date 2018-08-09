@@ -6,6 +6,6 @@ public class OverLayData {
     public static final String userBirthDay = "6";
 
     //Data for cart items
-    public  static final String expectedProductNameRumUp = "Bundaberg Rum UP 700ml";
-    public  static final String expectedProductPriceRumUp = "$39.95";
+    public static final String expectedProductNameRumUp = "Bundaberg Rum UP 700ml";
+    public static final String expectedProductPriceRumUp = "$39.95";
 }

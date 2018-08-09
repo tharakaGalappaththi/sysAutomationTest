@@ -4,19 +4,15 @@ import com.sysco.auto_test.common.Constants;
 import com.sysco.auto_test.pages.LoginPage;
 import com.sysco.auto_test.utils.DriverSetUpUtil;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.asserts.SoftAssert;
 
 /**
  * Created by Rifad on 5/21/18.
  */
-public class Login  {
+public class Login {
 
     public static LoginPage loginPage = new LoginPage();
-
-
-//    public static void loadLoginPage() {
-//            DesiredCapabilities capabilities = null;
-//            loginPage.loadLoginPage(capabilities, Constants.APP_URL);
-//    }
+    private static SoftAssert softAssert = new SoftAssert();
 
     public static void loadLoginPage() {
 
@@ -29,14 +25,9 @@ public class Login  {
         }
     }
 
-
-
-    public static void VerifyLoginButton(){
-        loginPage.isLoginButtonPresent();
-    }
-
-    public static void logIntoApplication(String email, String psw){
+    public static void logIntoApplication(String email, String psw) {
         loginPage.clickMyAccountLnk();
+        softAssert.assertTrue(loginPage.isLoginButtonPresent());
         loginPage.setTxtEmail(email);
         loginPage.setTxtPsw(psw);
         loginPage.clickLogin();
@@ -45,5 +36,5 @@ public class Login  {
     public static void quiteDriver() {
         loginPage.quitDriver();
     }
-    
+
 }

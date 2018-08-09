@@ -9,24 +9,20 @@ public class PaymentInfoPage extends LoginPage {
     private By txtCardExpiration = By.xpath("//select[@id='braintree_expiration']/../div");
     private By txtCvvNumber = By.xpath("//input[@id='braintree_cc_cid']");
 
-
-
-
-
-    public void clickOnCcRdb(){
+    public void clickOnCcRdb() {
         syscoLabUI.sleep(2);
         syscoLabUI.click(rdoCreditCard);
     }
 
-    public boolean isCardNumberFieldPresent(){
+    public boolean isCardNumberFieldPresent() {
         return syscoLabUI.isDisplayed(txtCreditCardNumber);
     }
 
-    public boolean isCardExpirationFieldPresent(){
+    public boolean isCardExpirationFieldPresent() {
         return syscoLabUI.isDisplayed(txtCardExpiration);
     }
 
-    public boolean isCvvNumberFieldPresent(){
+    public boolean isCvvNumberFieldPresent() {
         return syscoLabUI.isDisplayed(txtCardExpiration);
     }
 }

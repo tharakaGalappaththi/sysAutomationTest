@@ -14,45 +14,44 @@ public class CheckoutPage extends LoginPage {
     private By lblPostalCode = By.xpath("//div[@id='Autocomplete_billing:postcodesuburb']/div");
 
 
-
-    public void clickOnBtnProceedToCheckout(){
+    public void clickOnBtnProceedToCheckout() {
         syscoLabUI.click(btnProceedToCheckout);
     }
 
-    public String getTextFirstNameBilling(){
+    public String getTextFirstNameBilling() {
         return syscoLabUI.getText(txtFirstNameBilling);
     }
 
-    public String getTextLastNameBilling(){
+    public String getTextLastNameBilling() {
         return syscoLabUI.getText(txtLastNameBilling);
     }
 
-    public void clickOnContinue(){
+    public void clickOnContinue() {
         syscoLabUI.click(btnContinue);
     }
 
-    public void clearLastNameTxtField(){
+    public void clearLastNameTxtField() {
         syscoLabUI.clear(txtLastNameBilling);
     }
 
-    public void validateLastNameReqErrMsg(){
+    public void validateLastNameReqErrMsg() {
         syscoLabUI.isDisplayed(lblRequiredFieldErrorMsg);
     }
 
-    public void typeLastName(){
+    public void typeLastName() {
         syscoLabUI.sendKeys(txtLastNameBilling, LoginData.lastName);
     }
 
-    public boolean isPostalCodeAdded(){
-        if(syscoLabUI.getText(txtPostalCode)== ""){
+    public boolean isPostalCodeAdded() {
+        if (syscoLabUI.getText(txtPostalCode) == "") {
             return false;
-        }else {
+        } else {
             return true;
         }
     }
 
-    public void selectPostalCode(){
-        syscoLabUI.sendKeys(txtPostalCode,"2000");
+    public void selectPostalCode() {
+        syscoLabUI.sendKeys(txtPostalCode, "2000");
         syscoLabUI.sleep(2);
         syscoLabUI.click(lblPostalCode);
     }

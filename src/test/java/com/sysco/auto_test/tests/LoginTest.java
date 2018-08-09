@@ -26,8 +26,8 @@ public class LoginTest extends TestBase {
     public void testLogin() throws Exception {
         Login.loadLoginPage();
         softAssert.assertTrue(OverLay.verifyAgeValidPopUp());
-        OverLay.submitAge(OverLayData.userBirthYear,OverLayData.userBirthMonth,OverLayData.userBirthDay);
-        Login.logIntoApplication(LoginData.userEmail,LoginData.userPassword);
+        OverLay.submitAge(OverLayData.userBirthYear, OverLayData.userBirthMonth, OverLayData.userBirthDay);
+        Login.logIntoApplication(LoginData.userEmail, LoginData.userPassword);
         MyAccount.isMyAccountNameDisplayed();
         OverLay.clearCartItems();
         Home.selectProductCatAsClassicRange();
@@ -36,8 +36,8 @@ public class LoginTest extends TestBase {
         softAssert.assertEquals(OverLay.actualItemPriceOnCart(), OverLayData.expectedProductPriceRumUp);
         OverLay.clickOnCartCheckOutBtn();
         Checkout.clickOnProceedToCheckout();
-        softAssert.assertEquals(Checkout.actualFirstNameInBilling(),LoginData.firstName);
-        softAssert.assertEquals(Checkout.actualLastNameInBilling(),LoginData.lastName);
+        softAssert.assertEquals(Checkout.actualFirstNameInBilling(), LoginData.firstName);
+        softAssert.assertEquals(Checkout.actualLastNameInBilling(), LoginData.lastName);
         Checkout.validateReqFieldErrorMsg();
         Checkout.addValueToThePostalCodeField();
         Checkout.clickOnContinue();
@@ -50,9 +50,7 @@ public class LoginTest extends TestBase {
 
     @AfterTest
     public void webDriverClose() {
-       // syscoLabUI.driver.quit();
         Login.quiteDriver();
     }
-
 
 }

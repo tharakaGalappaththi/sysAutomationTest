@@ -8,11 +8,11 @@ public class DeliveryOptionsPage extends LoginPage {
     private By btnContinue = By.xpath("//button[@id='shipping-method-button']");
 
 
-    public boolean isDeliveryOptionsPresent(){
+    public boolean isDeliveryOptionsPresent() {
         return syscoLabUI.isDisplayed(lblDeliveryOptions);
     }
 
-    public void clickOnContinue(){
+    public void clickOnContinue() {
         syscoLabUI.sleep(2);
         syscoLabUI.click(btnContinue);
     }

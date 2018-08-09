@@ -6,11 +6,11 @@ public class DeliveryOptions {
 
     public static DeliveryOptionsPage deliveryOptionsPage = new DeliveryOptionsPage();
 
-    public static boolean isDeliveryOptionPresent(){
+    public static boolean isDeliveryOptionPresent() {
         return deliveryOptionsPage.isDeliveryOptionsPresent();
     }
 
-    public static void clickOnContinue(){
+    public static void clickOnContinue() {
         deliveryOptionsPage.clickOnContinue();
     }
 
