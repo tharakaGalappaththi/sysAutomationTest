@@ -19,7 +19,8 @@ public class LoginTest extends TestBase {
 
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        iTestContext.setAttribute("feature", "Login");
+//        iTestContext.setAttribute("feature", "Login");
+        iTestContext.setAttribute("feature", "Order - Shoping Cart");
     }
 
     @Test

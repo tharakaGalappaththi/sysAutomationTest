@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite>
+<suite name="regression" verbose="1" configfailurepolicy="continue">
+    <test name="regression">
+        <!--<packages>
+            <package name="com.sysco.hcm_web.tests"/>
+        </packages>-->
+        <classes>
+            <class name="com.sysco.auto_test.tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>

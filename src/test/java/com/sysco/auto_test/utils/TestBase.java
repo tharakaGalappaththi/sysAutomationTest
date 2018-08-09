@@ -12,8 +12,8 @@ import org.testng.annotations.Listeners;
 
 @Listeners(SyscoLabListener.class)
 public class TestBase {
-    private static SyscoLabListener testListeners;
-    private static SyscoLabQCenter syscoLabQCenter;
+    private  SyscoLabListener testListeners;
+    private  SyscoLabQCenter syscoLabQCenter;
 
     @BeforeClass
     public void init() {
@@ -28,7 +28,7 @@ public class TestBase {
     }
 
     @AfterClass(alwaysRun = true)
-    public static void cleanUp(ITestContext iTestContext) {
+    public  void cleanUp(ITestContext iTestContext) {
         try {
             syscoLabQCenter.setProjectName(Constants.TEST_PROJECT);
             syscoLabQCenter.setEnvironment(Constants.TEST_ENV);
