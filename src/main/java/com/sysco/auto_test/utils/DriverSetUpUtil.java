@@ -20,7 +20,7 @@ public class DriverSetUpUtil {
         if (System.getProperty("os.name").contains("Windows")) {
             System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/windows/chromedriver.exe");
         } else {
-            System.setProperty("webdriver.chrome.driver", "./src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/chromedriver");
         }
     }
 
