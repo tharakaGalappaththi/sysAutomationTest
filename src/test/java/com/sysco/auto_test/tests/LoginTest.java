@@ -5,14 +5,16 @@ import com.sysco.auto_test.data.LoginData;
 import com.sysco.auto_test.data.OverLayData;
 import com.sysco.auto_test.functions.*;
 import com.sysco.auto_test.utils.TestBase;
+import com.syscolab.qe.core.reporting.SyscoLabListener;
 import com.syscolab.qe.core.ui.SyscoLabUI;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-
+@Listeners(SyscoLabListener.class)
 public class LoginTest extends TestBase {
     protected SyscoLabUI syscoLabUI = new SyscoLabUI();
     SoftAssert softAssert = new SoftAssert();
@@ -20,7 +22,7 @@ public class LoginTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) {
 //        iTestContext.setAttribute("feature", "Login");
-        iTestContext.setAttribute("feature", "Order - Shoping Cart");
+        iTestContext.setAttribute("feature", "Order - Shopping Cart");
     }
 
     @Test
