@@ -25,7 +25,7 @@ public class LoginTest extends TestBase {
         iTestContext.setAttribute("feature", "Order - Shopping Cart");
     }
 
-    @Test
+    @Test(alwaysRun = true)
     public void testLogin() throws Exception {
         Login.loadLoginPage();
         softAssert.assertTrue(OverLay.verifyAgeValidPopUp());
