@@ -38,7 +38,7 @@ public class TestBase {
             syscoLabQCenter.setFeature(iTestContext.getAttribute("feature").toString());
             syscoLabQCenter.setClassName(iTestContext.getClass().getName());
 
-            if (Constants.UPDATE_DASHBOARD)
+//            if (Constants.UPDATE_DASHBOARD)
 //                SyscoLabReporting.generateJsonFile(SyscoLabListener.getResults(), syscoLabQCenter);
 
         } catch (Exception e) {
