@@ -93,7 +93,7 @@
                             </systemProperties>
                         </configuration>
 
-                        <dependencies>
+                        <!--<dependencies>
                             <dependency>
                                 <groupId>org.testng</groupId>
                                 <artifactId>testng</artifactId>
@@ -105,7 +105,7 @@
                                 <artifactId>testng</artifactId>
                                 <version>6.9.10</version>
                             </dependency>
-                        </dependencies>
+                        </dependencies>-->
                     </plugin>
                 </plugins>
             </build>
@@ -138,14 +138,14 @@
                             </systemProperties>
                         </configuration>
 
-                        <dependencies>
+                        <!--<dependencies>
                             <dependency>
                                 <groupId>org.testng</groupId>
                                 <artifactId>testng</artifactId>
                                 <version>6.9.10</version>
                                 <scope>runtime</scope>
                             </dependency>
-                        </dependencies>
+                        </dependencies>-->
                     </plugin>
                 </plugins>
             </build>
