@@ -6,7 +6,7 @@
             <package name="com.sysco.hcm_web.tests"/>
         </packages>-->
         <classes>
-            <class name="com.sysco.auto_test.tests.LoginTest"/>
+             <class name="com.sysco.auto_test.tests.LoginTest"/>
         </classes>
     </test>
 
