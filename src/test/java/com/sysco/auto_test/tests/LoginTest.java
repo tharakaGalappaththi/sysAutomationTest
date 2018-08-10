@@ -22,7 +22,7 @@ public class LoginTest extends TestBase {
     @BeforeClass
     public void init(ITestContext iTestContext) {
 //        iTestContext.setAttribute("feature", "Login");
-        iTestContext.setAttribute("feature", "Order - Shopping Cart");
+        iTestContext.setAttribute("feature", "Bundabergrum - Checkout");
     }
 
     @Test(alwaysRun = true)
