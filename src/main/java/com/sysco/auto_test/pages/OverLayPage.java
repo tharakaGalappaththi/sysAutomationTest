@@ -27,6 +27,7 @@ public class OverLayPage extends LoginPage {
     }
 
     public void selectBirthYear(String year) {
+        syscoLabUI.sleep(2);
         syscoLabUI.select(ddYear, year);
     }
 
