@@ -55,6 +55,7 @@ public class OverLayPage extends LoginPage {
     }
 
     public String getProductName() {
+        syscoLabUI.sleep(2);
         return syscoLabUI.getText(lblRumUp);
     }
 
